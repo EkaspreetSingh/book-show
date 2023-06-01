@@ -1,0 +1,114 @@
+body {
+    background: rgba(25, 50, 68, 0.8);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #25313a;
+    padding: 50px 100px;
+    gap: 50px 100px;
+  }
+  
+  .grid-item {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(25, 50, 68, 0.8);
+    border: 3px solid rgba(102, 155, 183, 0.8);
+    padding: 10px;
+    /* font-size: 30px; */
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  #rating {
+    position: absolute;
+  }
+
+  .grid-item:hover {
+    background-color: rgba(102, 155, 183, 0.8);
+    color: white;
+    border: 3px solid rgba(25, 50, 68, 0.8);
+  }
+
+  .grid-item a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .summary {
+    margin: 20px 40px;
+    color: rgb(176, 169, 169);
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .summary-box {
+    background-color: rgba(25, 50, 68, 0.8);
+    border: 3px solid rgba(102, 155, 183, 0.8);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px 30px;
+    color: white;
+  }
+
+  .summary-box a {
+    color: rgb(197, 195, 195);
+  }
+
+  .gray {
+    color: rgb(197, 195, 195);
+  }
+
+  .movie-summary {
+    /* width: 80%; */
+    padding: 0 30px;
+    /* border-bottom: 2px dotted rgba(102, 155, 183, 0.8); */
+  }
+
+  .book-show {
+    margin: 20px 40px;
+    color: white;
+    background: rgb(194, 35, 35);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .book-show:hover {
+    background: rgb(255, 0, 0);
+    cursor: pointer;
+  }
+
+  .home-btn {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 40px;
+    color: rgb(233, 203, 203);
+    background: transparent;
+    border: 1px solid rgb(233, 203, 203);
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+
+  .home-btn:hover {
+    border: red 1px solid;
+    color: red;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 900px) {
+    .grid-container {
+      grid-template-columns: auto;
+    }
+    .row {
+      flex-direction: column;
+    }
+  }
